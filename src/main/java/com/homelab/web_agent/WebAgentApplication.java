@@ -23,7 +23,7 @@ public class WebAgentApplication {
         SpringApplication.run(WebAgentApplication.class, args);
     }
 
-    // 3. O Endpoint usa o cliente da classe, não pede ele nos argumentos
+    // 3. O Endpoint usa o cliente da classe, não pede ele nos argumentos TO DO: validar personalidade
     @GetMapping("/perguntar")
     public String perguntar(@RequestParam(value = "msg", defaultValue = "Me conte uma curiosidade") String mensagem) {
         return chatClient.prompt()
