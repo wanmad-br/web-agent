@@ -16,7 +16,8 @@ public class WebAgentApplication {
 
     // 2. Construtor: O Spring entrega o "Builder" e nós criamos o cliente aqui
     public WebAgentApplication(ChatClient.Builder builder) {
-        this.chatClient = builder.build();
+        this.chatClient = builder.build(); 
+// start
     }
 
     public static void main(String[] args) {
